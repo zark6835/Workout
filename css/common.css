@@ -1,0 +1,111 @@
+:root {
+  --main__bg: #1f1c26;
+  --navigation__color: #f2f2f2;
+  --white: #ffffff;
+  --subtitle: rgba(255, 255, 255, 0.36);
+  --btn: #f24b88;
+  --border__section: #59253e;
+  --LEARN__MORE-btn: #1f1c26;
+  --nav__cards: #332f3c;
+  --team__card-bleck: #0d0d0d;
+  --team__card-white:  #E5E5E5;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.main__bg {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: auto;
+  background-color: var(--main__bg);
+}
+
+.container {
+  max-width: 1156px;
+  margin: 0 auto;
+}
+
+.subtext {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--subtitle);
+}
+
+.btn__wrapper {
+  display: flex;
+}
+
+.general__btn {
+  padding: 20px 30px;
+
+  text-decoration: none;
+
+  background-color: var(--btn);
+  border-radius: 10px;
+}
+
+.btn__small-wrapper {
+  display: flex;
+}
+
+.btn__small {
+  padding: 5px 14px;
+
+  text-decoration: none;
+
+  background-color: var(--btn);
+  border-radius: 5px;
+}
+
+.btn-small-style {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: var(--white);
+}
+
+.nav__link-style {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: var(--white);
+}
+
+.title {
+  display: inline;
+  text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 45px;
+
+  color: var(--white);
+  
+}
+
+@media screen and (max-width: 1080px) {
+  .mobile__expansion {
+    display: none;
+  }
+
+  .btn__wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  .general__btn {
+    padding: 11px;
+  }
+  
+  .title {
+    font-size: 26px;
+    line-height: 39px;
+    border-bottom: 5px solid  #59253e;
+  }
+}

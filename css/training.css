@@ -1,0 +1,81 @@
+.training__wrapper {
+  padding: 70px 12px 80px;
+}
+
+.training__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.more__text-style {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: var(--white);
+}
+
+.training__card-wrapper {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 350px);
+}
+
+.training__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn__mobile{
+  display: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .training__wrapper {
+    padding: 25px 12px;
+  }
+
+  .training__title {
+    justify-content: center;
+  }
+
+  .mobile__expansion {
+    display: none;
+  }
+
+  .training__card-wrapper {
+    grid-template-columns: 336px;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
+  .training__card-mobile1 {
+    background: url(../img/trening__card\ 1.svg);
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+  }
+
+  .trening__card-mobile{
+
+    padding: 179px 0 3px 5px;
+  }
+
+  .training__card-mobile2 {
+    background: url(../img/trening__card\ 2.svg);
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+  }
+
+  .training__card-mobile3 {
+    background: url(../img/trening__card\ 3.svg);
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+  }
+
+  .btn__mobile{
+    display: flex;
+    justify-content: center
+  }
+}

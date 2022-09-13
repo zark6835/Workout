@@ -1,0 +1,138 @@
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 12px 70px;
+}
+
+.nav__services {
+  max-width: 392px;
+}
+
+.nav__img-mobile {
+  display: none;
+  border-radius: 10px;
+}
+
+.nav__title {
+  display: inline;
+}
+
+.nav__main-text {
+  max-height: 72px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 96px;
+  letter-spacing: 0.215em;
+
+  color: var(--white);
+}
+
+.nav__main-subtext {
+  font-weight: 500;
+  font-size: 29px;
+  line-height: 44px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+
+  color: var(--white);
+}
+
+.nav__card-title {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--white);
+}
+
+.retreat {
+  padding: 65px 0 90px;
+}
+
+.nav__card-wrapper {
+  display: grid;
+  grid-template-columns: 314px 335px;
+  column-gap: 25px;
+}
+
+.nav__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.nav__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav__card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px 25px;
+
+  border-radius: 10px;
+  background-color: var(--nav__cards);
+}
+
+.nav__card-link {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+@media screen and (max-width: 1080px) {
+  .nav__card-wrapper {
+    display: none;
+  }
+
+  .nav__img-mobile {
+    display: block;
+    min-width: 100%;
+  }
+
+  .nav__wrapper {
+    justify-content: center;
+    padding: 32px 12px 25px;
+  }
+
+  .nav__main-text {
+    text-align: center;
+    padding-top: 40px;
+
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 39px;
+    letter-spacing: 0.215em;
+
+    color: var(--white);
+  }
+  .nav__main-subtext {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.215em;
+
+    color: var(--white);
+  }
+
+  .retreat {
+    text-align: center;
+    padding: 9px 0 54px;
+  }
+
+  .sup-text {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .nav__style-text {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}

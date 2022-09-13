@@ -1,0 +1,91 @@
+.company__wrapper {
+  padding: 30px 12px 17px;
+}
+
+.company__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 0;
+  border-top: 1px solid var(--navigation__color);
+  border-bottom: 1px solid var(--navigation__color);
+}
+
+.company__retreat-content {
+  display: flex;
+  justify-content: center;
+  gap: 277px;
+}
+
+.company__logo-mobile{
+   display: none;
+}
+
+.company__information {
+  display: flex;
+  gap: 55px;
+}
+
+.company__link {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.company__paragraph {
+  text-transform: uppercase;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+
+  color: var(--white);
+}
+
+.company__link-style {
+  text-decoration: none;
+  text-transform: capitalize;
+
+  font-size: 14px;
+  line-height: 21px;
+
+  color: var(--white);
+}
+
+.company__social{
+   display: flex;
+   gap: 8px;
+}
+
+@media screen and (max-width: 1080px){
+   .company__wrapper{
+      padding: 70px 12px 10px;
+   }
+
+   .company__logo-wrapper{
+      display: flex;
+      justify-content: center;
+   }
+
+   .company__logo-mobile{
+      display: block;
+   }
+
+   .company__content {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .company__retreat-content{
+      flex-direction: column-reverse;
+      gap: 47px;
+    }
+
+    .company__social{
+      justify-content: center;
+    }
+
+    .company__information{
+      justify-content: center;
+    }
+}
